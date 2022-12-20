@@ -1,14 +1,14 @@
 #!/usr/bin/bash
 
-# Update system
-sudo pacman -Syu
-
 # Copy system files
 sudo cp ./sys-files/makepkg.conf /etc/makepkg.conf
 sudo cp ./sys-files/pacman.conf /etc/pacman.conf
 
 # Update mirrors
 sudo pacman-mirrors --fasttrack
+
+# Update system
+sudo pacman -Syu
 
 # Enable trim, once a week
 sudo systemctl enable fstrim.timer
