@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Update system
+sudo pacman -Syu
+
 # Copy system files
 sudo cp ./sys-files/makepkg.conf /etc/makepkg.conf
 sudo cp ./sys-files/pacman.conf /etc/pacman.conf
