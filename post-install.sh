@@ -1,5 +1,7 @@
 topgrade -y
 cd ./stow || exit
+rm ~/.zshrc
+rm ~/.p10k.zsh
 stow -v */ -t ../../
-cp ../wallpapers/* /usr/share/backgrounds/
-cp ../home_images/* ~/
+sudo cp ../wallpapers/* /usr/share/backgrounds/
+sudo cp ../home_images/* ~/
