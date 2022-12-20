@@ -6,6 +6,7 @@
 ( contains ( window_class ) "Alacritty" )
 ( contains ( window_class ) "Pcmanfm" )
 ( contains (application_name ) "Alacritty" )
+( contains (application_name ) "kitty" )
 )
 ( begin
 ( spawn_async (str "transset-df -i " (window_xid) " 0.85" ))

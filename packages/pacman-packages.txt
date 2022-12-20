@@ -38,3 +38,4 @@ youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
+ttf-fira-code

@@ -12,6 +12,7 @@ Then, after the system has restarted, run the following command:
 # TODO
 - Set up ssh with github
 - Set up gpg with github
+- Set wallpaper
 
 # Usefull commands
 ssh -oHostKeyAlgorithms=+ssh-dss <user>@<ip> -p <port>

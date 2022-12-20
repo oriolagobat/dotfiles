@@ -163,3 +163,6 @@ alias \
     cat="bat" \
     df="duf" \
     gpu="git pull" \
+    icat="kitty +kitten icat" \
+    ssh="kitty +kitten ssh"  \
+    fdif="kitty +kitten diff" \
