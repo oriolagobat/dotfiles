@@ -1,0 +1,15 @@
+intellij-idea-ultimate-edition
+intellij-idea-ultimate-edition-jre
+mongodb-bin
+mongodb-compass
+nerd-fonts-complete
+pycharm-professional
+slack-desktop
+spotify
+spotify-tui-bin
+virtualbox-bin
+virtualbox-ext-oracle
+webstorm
+webstorm-jre
+google-chrome
+rofi-bluetooth-git
