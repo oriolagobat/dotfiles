@@ -21,7 +21,6 @@ sudo pacman -S --needed - < ./packages/pacman-packages.txt
 yay --save --makepkgconf /etc/makepkg.conf
 yay -S --needed - < ./packages/aur-packages.txt
 pip3 install -r ./packages/pip-packages.txt
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Update mime database
 echo "export BROWSER=/usr/bin/firefox" | sudo tee -a ~/.profile
@@ -30,5 +29,5 @@ xdg-settings set default-web-browser firefox.desktop
 # Upgrade kernel
 sudo mhwd-kernel -i linux60 rmc
 
-# Reboot
-sudo reboot
+echo "Reboot after updating to zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
