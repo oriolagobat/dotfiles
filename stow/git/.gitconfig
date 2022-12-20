@@ -1,0 +1,15 @@
+# Este es el archivo de configuración de Git por usuario.
+[user]
+	email = oriolagobat@gmail.com
+	name = Oriol Agost Batalla
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset %an -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	s = status
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true

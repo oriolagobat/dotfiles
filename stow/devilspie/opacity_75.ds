@@ -1,0 +1,8 @@
+( if
+( or
+( contains ( application_name ) "shutter" )
+( contains ( application_name ) "Spotify" )
+)
+( begin
+( spawn_async (str "transset-df -i " (window_xid) " 0.75" ))
+)

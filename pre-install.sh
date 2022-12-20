@@ -14,9 +14,13 @@ sudo systemctl enable fstrim.timer
 # TODO: Not permanent, find a way to make it permanent
 sudo sysctl vm.swappiness=10
 
-# Install packages
+# Install pacman packages
 sudo pacman -S --needed - < ./packages/pacman-packages.txt
+yay --save --makepkgconf /etc/makepkg.conf
 yay -S --needed - < ./packages/aur-packages.txt
+pip3 install -r ./packages/pip-packages.txt
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 
 # Upgrade kernel
 sudo mhwd-kernel -i linux60 rmc

@@ -1,0 +1,13 @@
+( if
+( or
+( contains ( window_class ) "Arandr" )
+( contains ( window_class ) "Spicy" )
+( contains ( window_class ) "Tor Browser" )
+( contains ( window_class ) "Alacritty" )
+( contains ( window_class ) "Pcmanfm" )
+( contains (application_name ) "Alacritty" )
+)
+( begin
+( spawn_async (str "transset-df -i " (window_xid) " 0.85" ))
+)
+)
