@@ -11,6 +11,7 @@ sudo pacman-mirrors --fasttrack
 sudo systemctl enable fstrim.timer
 
 # Reduce swappiness, not that much needed with 32GB of RAM
+# TODO: Not permanent, find a way to make it permanent
 sudo sysctl vm.swappiness=10
 
 # Install packages
