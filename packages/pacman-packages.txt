@@ -1,3 +1,4 @@
+kitty
 base-devel
 alacritty
 asciidoc
