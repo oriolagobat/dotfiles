@@ -9,8 +9,6 @@ spotify
 spotify-tui-bin
 virtualbox-bin
 virtualbox-ext-oracle
-webstorm
-webstorm-jre
 google-chrome
 rofi-bluetooth-git
 shell-color-scripts
