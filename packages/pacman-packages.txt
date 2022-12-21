@@ -1,3 +1,4 @@
+npm
 kitty
 base-devel
 alacritty
