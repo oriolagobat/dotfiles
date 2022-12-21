@@ -26,4 +26,5 @@ sudo cp ../home_images/* ~/
 
 # Services
 sudo systemctl enable --now bluetooth
+sudo systemctl enable --now docker.service
 sudo usermod -aG docker oriolagobat
