@@ -13,5 +13,4 @@ webstorm
 webstorm-jre
 google-chrome
 rofi-bluetooth-git
-python-pigments
 shell-color-scripts
