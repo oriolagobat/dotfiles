@@ -1,5 +1,9 @@
 #!/usr/bin/bash
 
+# Fix time
+sudo timedatectl set-ntp true
+hwclock --systohc
+
 # Copy system files
 sudo cp ./sys-files/makepkg.conf /etc/makepkg.conf
 sudo cp ./sys-files/pacman.conf /etc/pacman.conf
