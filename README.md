@@ -22,3 +22,4 @@ Then, after the system has restarted, run the following command:
 ssh -oHostKeyAlgorithms=+ssh-dss <user>@<ip> -p <port>
 tar -czvf <file>.tar.gz <folder> # Compress
 tar -xzvf <file>.tar.gz # Decompress
+git rebase --signoff --root # Resign all commits
