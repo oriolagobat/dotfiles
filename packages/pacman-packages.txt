@@ -43,3 +43,5 @@ zathura
 zathura-pdf-mupdf
 zip
 ttf-fira-code
+pandoc
+lynx
