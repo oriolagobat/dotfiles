@@ -11,8 +11,6 @@
 (setq visible-bell t)                                                                                   ; Makes the screen flash on error (ex: delete when impossible, ...)
 (set-face-attribute 'default nil :font "Fira Code Retina" :height 100)                                  ; Set the font and its size
 
-(load-theme 'doom-one)                                                                                  ; Set the theme
-
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)                                                 ; Makes "ESC" key quit prompts
 
@@ -122,18 +120,5 @@
   ([remap describe-key] . helpful-key))
 
 ;; Doom themes
-(use-package doom-themes)
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(doom-themes which-key use-package rainbow-delimiters ivy-rich helpful doom-modeline counsel command-log-mode all-the-icons)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(use-package doom-themes
+  :init (load-theme 'doom-one t))
