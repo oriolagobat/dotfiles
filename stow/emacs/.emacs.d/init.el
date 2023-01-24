@@ -189,3 +189,9 @@
 
 (use-package counsel-projectile
      :config (counsel-projectile-mode))
+
+;; MAGIT
+(use-package magit)
+; This two lines bellow make diff apear in the same buffer, should give it a try
+  ;:custom
+  ;(magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
