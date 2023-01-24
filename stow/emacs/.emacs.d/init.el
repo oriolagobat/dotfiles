@@ -82,7 +82,7 @@
 
 (column-number-mode)
 (global-display-line-numbers-mode t)          ;; To have "normal" line numbers
-;;(global-display-line-numbers-mode relative)    ;; To have relative line numbers
+(setq display-line-numbers 'relative)    ;; To have relative line numbers
 
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook          ; Org mode
@@ -174,3 +174,18 @@
   "t" '(:ignore t :which-key "toggles")
   "tt" '(counsel-load-theme :which-key "choose theme")
   "ts" '(hydra-text-scale/body :which-key "scale text"))
+
+;; PROJECTILE
+(use-package projectile
+  :diminish projectile-mode
+  :config (projectile-mode)
+  :custom ((projectile-completion-system 'ivy))
+  :bind-keymap
+  ("C-C p" . projectile-command-map)
+  :init
+  (when (file-directory-p "~/Projects")
+    (setq projectile-project-search-path '("~/Projects")))
+  (setq projectile-h-project-action #'projectile-dired))
+
+(use-package counsel-projectile
+     :config (counsel-projectile-mode))
