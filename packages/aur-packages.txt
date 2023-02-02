@@ -12,3 +12,4 @@ virtualbox-ext-oracle
 google-chrome
 rofi-bluetooth-git
 shell-color-scripts
+tre-command
