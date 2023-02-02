@@ -162,6 +162,7 @@ alias \
     ls="lsd" \
     cat="bat" \
     df="duf" \
+    tree="tre" \
     gpu="git pull" \
     icat="kitty +kitten icat" \
     ssh="kitty +kitten ssh"  \
