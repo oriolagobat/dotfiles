@@ -45,3 +45,4 @@ zip
 ttf-fira-code
 pandoc
 lynx
+texlive-most
