@@ -46,3 +46,6 @@ ttf-fira-code
 pandoc
 lynx
 texlive-most
+pass
+pass-otp
+passmenu
