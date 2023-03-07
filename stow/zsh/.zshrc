@@ -167,5 +167,5 @@ alias \
     icat="kitty +kitten icat" \
     ssh="kitty +kitten ssh"  \
     fdif="kitty +kitten diff" \
-    gpp="git pass push" \
-    gppu="git pass pull" \
+    pgp="git pass push" \
+    pgpu="git pass pull" \
