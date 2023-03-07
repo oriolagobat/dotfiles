@@ -158,7 +158,7 @@ alias \
     gpf="git push --force" \
     grh="git reset --hard HEAD" \
     gr="git rebase " \
-    gri="git rebase -i HEAD~" \
+    grc="git add . && git rebase --continue" \
     ls="lsd" \
     cat="bat" \
     df="duf" \
@@ -167,3 +167,5 @@ alias \
     icat="kitty +kitten icat" \
     ssh="kitty +kitten ssh"  \
     fdif="kitty +kitten diff" \
+    gpp="git pass push" \
+    gppu="git pass pull" \
