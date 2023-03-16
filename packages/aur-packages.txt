@@ -13,3 +13,4 @@ google-chrome
 rofi-bluetooth-git
 shell-color-scripts
 tre-command
+passmenu-otp-git

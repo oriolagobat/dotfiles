@@ -39,8 +39,9 @@ bindsym $mod+Shift+q kill
 # start program launcher
 bindsym $mod+d exec --no-startup-id dmenu_recency
 
-# start pass launcher
+# start pass and pass otp launcher
 bindsym $mod+p exec --no-startup-id passmenu
+bindsym $mod+o exec --no-startup-id passmenu-otp
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
