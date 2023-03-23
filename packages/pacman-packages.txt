@@ -49,3 +49,6 @@ texlive-most
 pass
 pass-otp
 passmenu
+yubikey-manager
+yubico-pam
+pam-u2f
