@@ -52,3 +52,4 @@ passmenu
 yubikey-manager
 yubico-pam
 pam-u2f
+passff-host
