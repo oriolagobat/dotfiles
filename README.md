@@ -12,6 +12,10 @@ Then, after the system has restarted, run the following command:
 ```
 
 # TODO
+- Set up gpg
+	- Get my pub.key: `tar -xzf gpg-datadir.tar.gz .gnupg/my_keys/pub.key`
+	- gpg --import pub.key
+	- gpg --edit-key "email from gpg key" -> trust -> 5
 - Set up ssh with github: `ssh-keygen -t ed25519-sk -C "email"`, and add to github
 - Set wallpaper
 - Set git user.email to the gpg email
