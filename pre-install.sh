@@ -8,6 +8,7 @@ hwclock --systohc
 sudo cp ./sys-files/makepkg.conf /etc/makepkg.conf
 sudo cp ./sys-files/pacman.conf /etc/pacman.conf
 sudo cp ./sys-files/mimeapps.list ~/.config/mimeapps.list
+cp .sys-files/.gitconfig ~/.gitconfig
 
 # Update mirrors
 sudo pacman-mirrors --fasttrack
