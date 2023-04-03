@@ -36,3 +36,4 @@ echo "auth required pamu2f.so cue [cue_prompt=Tap the Yubikey to login]" > /etc/
 - tar -xzvf <file>.tar.gz # Decompress
 - git rebase --signoff --root # Resign all commits
 - pandoc file.md | lynx -stdin  # Preview md files from cli
+- gpg-connect-agent "key serial number" "learn --force" /bye  # Link yubikey with same pgp keys to work on linux
