@@ -12,15 +12,14 @@ Then, after the system has restarted, run the following command:
 ```
 
 # TODO
-- Set up ssh with github
-  https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-- Set up gpg with github
-  https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+- Set up ssh with github: `ssh-keygen -t ed25519-sk -C "email"`, and add to github
 - Set wallpaper
+- Set git user.email to the gpg email
+- Set git signing key to the public gpg id
 
 # Usefull commands
-ssh -oHostKeyAlgorithms=+ssh-dss <user>@<ip> -p <port>
-tar -czvf <file>.tar.gz <folder> # Compress
-tar -xzvf <file>.tar.gz # Decompress
-git rebase --signoff --root # Resign all commits
-pandoc file.md | lynx -stdin  # Preview md files from cli
+- ssh -oHostKeyAlgorithms=+ssh-dss <user>@<ip> -p <port>
+- tar -czvf <file>.tar.gz <folder> # Compress
+- tar -xzvf <file>.tar.gz # Decompress
+- git rebase --signoff --root # Resign all commits
+- pandoc file.md | lynx -stdin  # Preview md files from cli
