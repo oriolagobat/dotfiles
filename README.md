@@ -1,4 +1,4 @@
-# Instructions
++# Instructions
 ```shell
 git clone https://github.com/oriolagobat/dotfiles
 cd dotfiles
@@ -16,6 +16,15 @@ Then, after the system has restarted, run the following command:
 - Set wallpaper
 - Set git user.email to the gpg email
 - Set git signing key to the public gpg id
+- Set up yubikey for sign-in:
+```bash
+mkdir ~/.config/Yubico
+pamu2fcfg >> ~/.config/Yubico/u2f_keys  # For each key
+echo "auth required pamu2f.so cue [cue_prompt=Tap the Yubikey to sudo]" > /etc/pam.d/sudo
+echo "auth required pamu2f.so cue [cue_prompt=Tap the Yubikey to unlock]" > /etc/pam.d/i3lock
+echo "auth required pamu2f.so cue [cue_prompt=Tap the Yubikey to login]" > /etc/pam.d/login
+echo "auth required pamu2f.so cue [cue_prompt=Tap the Yubikey to login]" > /etc/pam.d/system-login
+```
 
 # Usefull commands
 - ssh -oHostKeyAlgorithms=+ssh-dss <user>@<ip> -p <port>
