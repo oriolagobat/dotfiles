@@ -37,3 +37,4 @@ echo "auth required pamu2f.so cue [cue_prompt=Tap the Yubikey to login]" > /etc/
 - git rebase --signoff --root # Resign all commits
 - pandoc file.md | lynx -stdin  # Preview md files from cli
 - gpg-connect-agent "key serial number" "learn --force" /bye  # Link yubikey with same pgp keys to work on linux
+- shuf -i 10-99 -n 1  # Generate one random number between 10 and 100
