@@ -16,16 +16,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-#Doom
-git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
-~/.emacs.d/bin/doom install
-
 # Copy images and wallpapers
 sudo cp wallpapers/wallpapers/* /usr/share/backgrounds/
 sudo cp ../home_images/* ~/
 
 # Services
+sudo systemctl daemon-reload
 sudo systemctl enable --now bluetooth
 sudo systemctl enable --now docker.service
+sudo systemctl enable --now mongodb.service
 sudo systemctl enable --now pcscd.socket
 sudo usermod -aG docker oriolagobat
