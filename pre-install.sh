@@ -24,7 +24,6 @@ echo "vm.swappiness=10" | sudo tee -a /etc/sysctl.d/99-sysctl.conf
 
 # Install pacman packages
 sudo pacman -S --needed - < ./packages/pacman-packages.txt
-yay --save --makepkgconf /etc/makepkg.conf
 yay -S --needed - < ./packages/aur-packages.txt
 pip3 install -r ./packages/pip-packages.txt
 
