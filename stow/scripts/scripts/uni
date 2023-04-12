@@ -1,0 +1,3 @@
+#!/bin/sh
+
+autorandr --change && nitrogen --set-zoom-fill /usr/share/background/0213.jpg
