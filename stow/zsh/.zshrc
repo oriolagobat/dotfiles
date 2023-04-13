@@ -169,6 +169,7 @@ alias \
     fdif="kitty +kitten diff" \
     pgp="pass git push" \
     pgpu="pass git pull" \
+    man="tldr" \
 
 
 # Load Angular CLI autocompletion.
