@@ -1,0 +1,2 @@
+set smoothscroll true
+set editorcmd kitty -e nvim
