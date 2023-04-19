@@ -16,3 +16,4 @@ passmenu-otp-git
 nerd-fonts-meta
 whatsdesk-bin
 tutanota-desktop-bin
+tre-command
