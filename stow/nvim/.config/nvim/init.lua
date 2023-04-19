@@ -2,5 +2,6 @@ require("base")
 require("keybindings")
 require("plugins")
 
--- Plguins config
+-- Plugins config
 require("plug-conf.material")
+require("plug-conf.lualine")
