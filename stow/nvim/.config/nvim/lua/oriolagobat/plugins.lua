@@ -11,10 +11,10 @@ end
 
 -- Update packer everytime plugins.lua is modified
 vim.cmd([[
-  augroup packer_user_config
-  autocmd!
-  autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
+augroup packer_user_config
+autocmd!
+autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+augroup end
 ]])
 
 local packer_bootstrap = ensure_packer()
@@ -27,10 +27,33 @@ return require('packer').startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
   use 'm4xshen/autoclose.nvim'
+  use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
+  use 'mbbill/undotree'
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {                                      -- Optional
+      'williamboman/mason.nvim',
+      run = function()
+        pcall(vim.cmd, 'MasonUpdate')
+      end,
+    },
+    {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-  -- Automatically set up your configuration after cloning packer.nvim
-  -- Put this at the end after all plugins
-  if packer_bootstrap then
-    require('packer').sync()
-  end
+    -- Autocompletion
+    {'hrsh7th/nvim-cmp'},     -- Required
+    {'hrsh7th/cmp-nvim-lsp'}, -- Required
+    {'L3MON4D3/LuaSnip'},     -- Required
+  }
+}
+
+
+-- Automatically set up your configuration after cloning packer.nvim
+-- Put this at the end after all plugins
+if packer_bootstrap then
+  require('packer').sync()
+end
 end)

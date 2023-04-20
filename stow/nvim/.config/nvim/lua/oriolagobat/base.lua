@@ -1,10 +1,8 @@
 -- Numbers
--- Show numbers on lines
 vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- Search
--- Ignore case unless the search term has an uppercase
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 -- Don't hilight results of previous search
@@ -17,9 +15,8 @@ vim.opt.wrap = true
 vim.opt.breakindent = true
 
 -- Tabs
--- Max tab occupation
 vim.opt.tabstop = 2
--- Tab size
+vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 -- Tansform tab characters to spacs
 vim.opt.expandtab = true

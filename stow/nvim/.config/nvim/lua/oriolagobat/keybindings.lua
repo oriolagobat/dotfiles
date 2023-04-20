@@ -13,8 +13,8 @@ end
 map("i", "<C-g>", "<Esc>")
 map("v", "<C-g>", "<Esc>")
 
--- Remap <Leader>fs as write file
-map("n", "<Leader>fs", ":wq<CR>")
-
--- Remap <Leader>fd as discard file
-map("n", "<Leader>fd", ":qa!<CR>")
+-- Remap <Leader>fs as write file and exit
+map("n", "<Leader>fs", ":wq<CR>") -- Write file and quit
+map("n", "<Leader>fd", ":qa!<CR>") -- Discard file
+map("n", "<Leader>fw", ":w<CR>") -- Write file
+map("n", "<Leader>fq", ":q<CR>") -- Quit file
