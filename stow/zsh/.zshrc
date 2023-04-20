@@ -171,6 +171,7 @@ alias \
     pgp="pass git push" \
     pgpu="pass git pull" \
     man="tldr" \
+    nano="nvim" \
 
 
 # Load Angular CLI autocompletion.
