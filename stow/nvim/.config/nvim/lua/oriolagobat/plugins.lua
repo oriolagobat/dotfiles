@@ -29,6 +29,7 @@ return require('packer').startup(function(use)
   use 'm4xshen/autoclose.nvim'
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
   use 'mbbill/undotree'
+  use 'easymotion/vim-easymotion'
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
