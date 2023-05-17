@@ -27,6 +27,12 @@ let mapleader = " "
 " Remap escape key
 imap <C-g> <Esc>
 
+" Easy motion"
+set easymotion
+let g:EasyMotion_leader_key='<Space><Space>'
+let g:EasyMotion_re_anywhere='<Space><Space>f'
+
+
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "" Map \r to the Reformat Code action
