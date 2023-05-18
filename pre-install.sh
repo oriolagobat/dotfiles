@@ -32,7 +32,7 @@ echo "export BROWSER=/usr/bin/firefox" | sudo tee -a ~/.profile
 xdg-settings set default-web-browser firefox.desktop
 
 # Upgrade kernel
-sudo mhwd-kernel -i linux62 rmc
+sudo mhwd-kernel -i linux63 rmc
 
 echo "Reboot after updating to zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
