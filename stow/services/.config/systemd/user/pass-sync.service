@@ -1,0 +1,15 @@
+[Unit]
+Description=Pass Git Sync
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/pass git pull
+ExecStop=/usr/bin/pass git push
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=pass-git-sync
+
+
+[Install]
+WantedBy=default.target
