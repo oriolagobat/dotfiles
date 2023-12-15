@@ -3,11 +3,8 @@ intellij-idea-ultimate-edition-jre
 mongodb-bin
 mongodb-compass
 pycharm-professional
-slack-desktop
 spotify
 spotify-tui-bin
-virtualbox-bin
-virtualbox-ext-oracle
 google-chrome
 rofi-bluetooth-git
 shell-color-scripts
@@ -17,3 +14,5 @@ nerd-fonts-meta
 whatsdesk-bin
 tutanota-desktop-bin
 tre-command
+webstorm
+webstorm-jre
