@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
   use 'mbbill/undotree'
   use 'easymotion/vim-easymotion'
+  use 'eandrju/cellular-automaton.nvim'
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v2.x',
