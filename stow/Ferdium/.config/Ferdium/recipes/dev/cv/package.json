@@ -1,0 +1,14 @@
+{
+  "id": "UdL-CV",
+  "name": "UdL-CV",
+  "version": "1.0.0",
+  "description": "UdL's cv port for Ferdium",
+  "main": "index.js",
+  "author": "Oriol Agost <oriol@agost.info>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://cv.udl.cat/portal",
+    "hasTeamId": false,
+    "hasNotificationSound": false
+  }
+}
