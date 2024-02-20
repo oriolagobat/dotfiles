@@ -87,6 +87,7 @@ plugins=(
 	keychain
 	gpg-agent
 	lpass
+    poetry
 	)
 
 source $ZSH/oh-my-zsh.sh
