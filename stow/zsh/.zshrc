@@ -193,3 +193,10 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 eval $(thefuck --alias)
+# Pyenv
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export LD_LIBRERY_PATH=/usr/lib/python3.11/site-packages:$LD_LIBRARY_PATH
